@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit-2 C2</title>
+    <style>
+      /* Write your styles here */
+      *{
+        padding: 0;
+        margin: 0;
+      }
+  body{
+    width: 100vw;
+    height: auto;
+  }
+
+
+  .courses{
+    width: 100%;
+    display: grid;
+    /* grid-template-rows: repeat(2,150px); */
+    grid-template-columns: repeat(3,400px);
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+  }
+  .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    }
+  .card img{
+   width: 100px;
+   height: 90px;
+   border-radius: 50px;
+      }
+  .text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: space-around;
+  }
+  .text h3{
+    margin: 10px;
+  }
+  .text p{
+    color: rgb(145,145,145);
+    margin: 10px;
+  }
+
+
+
+
+  .teach{
+    background-color: rgb(250,250,250);
+    text-align: center;
+  }
+  .teachers{
+    display: grid;
+    grid-template-columns: repeat(4,270px);
+    gap: 15px;
+    justify-content: center;
+    margin: 15px auto;
+    }
+  .tcard{
+    width: 270px;
+    height: fit-content;
+  }
+
+  .tcard img{
+    width: 100%;
+    height: 200px;
+  }
+  .tcard h3{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 5px 0px;
+  }
+  .tcard p{
+    color: rgb(240,162,120);
+    font-size: 10px;
+  }
+  .tcard h6{
+    color: rgb(127,127,127);
+    font-weight: 100;
+    font-size: 14px;
+  }
+
+
+
+      /* keep media queries at that last */
+      /* medium screens */
+      @media(max-width: 720px){
+        .courses{
+          grid-template-columns: repeat(2,280px);
+          padding: 10px;
+          justify-content: center;
+          margin: auto;
+        }
+        .teachers{
+          grid-template-columns: repeat(2,280px);
+          margin: auto;
+        }
+      }
+
+      /* small screens */
+      @media(max-width: 420px){
+        .courses{
+          grid-template-columns: repeat(1,350px);
+          padding: 10px;
+          margin: auto;
+          justify-content: center;
+        }
+        .teachers{
+          grid-template-columns: repeat(1,270px);
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Courses section - top section -->
+    <div id="courses" class="courses" >
+      <div class="card">
+        <img src="./Images/business-removebg-preview.png" alt="">
+        <div class="text">
+        <h3>Bussiness School</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, cumque.</p>
+      </div>
+      </div>
+      <div class="card">
+        <img src="./Images/earthlocation-removebg-preview.png" alt="">
+        <div class="text">
+        <h3>Marketing</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, cumque.</p>
+      </div>
+    </div>
+      <div class="card">
+        <img src="./Images/photography-removebg-preview.png" alt="">
+        <div class="text">
+        <h3>Photography</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, cumque.</p>
+      </div>
+    </div>
+      <div class="card">
+        <img src="./Images/like-removebg-preview.png" alt="">
+        <div class="text">
+        <h3>Social Media</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, cumque.</p>
+      </div>
+    </div>
+      <div class="card">
+        <img src="./Images/development-removebg-preview.png" alt="">
+        <div class="text">
+        <h3>Development</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, cumque.</p>
+      </div>
+      </div>
+      <div class="card">
+        <img src="./Images/rocket-removebg-preview.png" alt="">
+        <div class="text">
+        <h3>Design</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, cumque.</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="teach">
+    <h1 style="padding:35px 0px 10px 0px;font-size: 25px;">Certified Teachers</h1>
+    <p id="description" style="color: rgb(145,145,145);padding-bottom: 10px;">
+      Separated they live in. A small river named Duden flows by their place and
+      supplies it with the necessary regelialia. It is a paradisematic country
+    </p>
+    <!-- Teachers Section -->
+    <div id="teachers" class="teachers">
+      <div class="tcard">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnBh07-IwKxmihgLUC4JUBSOttlVHzU6XQ9Q&usqp=CAU" alt="">
+        <h3>Bianca Wilson</h3>
+        <p>TEACHER</p>
+        <h6>I am a ambitious workaholic, but apart from <br> simple person.</h6>
+      </div>
+      <div class="tcard">
+        <img src="https://us.123rf.com/450wm/sheftsoff/sheftsoff1712/sheftsoff171200262/92481229-smiling-girl-student-or-woman-teacher-portrait-on-gray-wall-.jpg?ver=6" alt="">
+        <h3>Mitch Parker</h3>
+        <p>ENGLISH TEACHER</p>
+        <h6>I am a ambitious workaholic, but apart from <br> simple person.</h6>
+      </div>
+      <div class="tcard">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPGFOnZwowNUMx7pqvNKRFe5cNrtxGXo5rqywZBhOskjpwe4RgkatywPxe6-IQ037DnU&usqp=CAU" alt="">
+        <h3>Stella Smith</h3>
+        <p>ART TEACHER</p>
+        <h6>I am a ambitious workaholic, but apart from <br> simple person.</h6>
+      </div>
+      <div class="tcard">
+        <img src="https://media.istockphoto.com/photos/teacher-in-front-of-blackboard-picture-id1204853163?k=20&m=1204853163&s=612x612&w=0&h=xFblBnV6ZCWIirO8gdzwqaK0QMniHWw_Pt9JWZwt-7k=" alt="">
+        <h3>Monshe Henderson</h3>
+        <p>SCIENCE TEACHER</p>
+        <h6>I am a ambitious workaholic, but apart from <br> simple person.</h6>
+      </div>
+    </div>
+  </div> 
+  </body>
+</html>
